@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "real time sync",
+    //   "program": "${workspaceFolder}/schedulers/runSchedulers.js"
+    // },
+    // {
+    //   "name": "Attach by Process ID",
+    //   "processId": "${command:PickProcess}",
+    //   "request": "attach",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "type": "pwa-node"
+    // },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug",
+      "skipFiles": ["<node_internals>/**"],
+      "envFile": "${workspaceFolder}/server/.env",
+      //"runtimeArgs": ["-r", "esm"],
+      "program": "${workspaceFolder}/server/src/index.server.js"
+    }
+  ]
+}
